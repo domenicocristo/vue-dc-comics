@@ -4,7 +4,7 @@
       <nav>
           <ul>
               <li v-for="link, i in links" :key="i">
-                  <img :src="link.img" alt="">
+                  <img :src="require(`../assets/img/${link.img}`)" alt="">
                   <a href="#">{{link.text}}</a>
               </li>
           </ul>
@@ -19,27 +19,27 @@ export default {
       return {
           links: [
               {
-                  img: "../assets/img/buy-comics-digital-comics.png",
+                  img: "buy-comics-digital-comics.png",
                   text: "DIGITAL COMICS"
               },
 
               {
-                  img: "../assets/img/buy-comics-digital-comics.png",
+                  img: "buy-comics-merchandise.png",
                   text: "DC MERCHANDISE"
               },
 
               {
-                  img: "../assets/img/buy-comics-digital-comics.png",
+                  img: "buy-comics-shop-locator.png",
                   text: "SUBSCRIPTION"
               },
 
               {
-                  img: "../assets/img/buy-comics-digital-comics.png",
+                  img: "buy-comics-subscriptions.png",
                   text: "COMIC SHOP LOCATOR"
               },
 
               {
-                  img: "../assets/img/buy-comics-digital-comics.png",
+                  img: "buy-dc-power-visa.svg",
                   text: "DC POWER VISA"
               }
           ]
@@ -64,6 +64,10 @@ main {
         li {
             display: inline-block;
             margin: 15px;
+            img {
+                height: 40px;
+                margin-right: 10px;
+            }
             a {
                 text-decoration: none;
                 color: #fff;
