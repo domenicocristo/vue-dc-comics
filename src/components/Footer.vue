@@ -36,6 +36,8 @@
                   </li>
               </ul>
           </section>
+
+          <img src="../assets/img/dc-logo-bg.png" alt="logo-footer">
       </nav>
       <section id="social">
           <button>SIGN-UP NOW!</button>
@@ -167,9 +169,12 @@ export default {
 footer {
     nav {
         height: 350px;
+        display: flex;
+        justify-content: center;
         background-image: url(../assets/img/footer-bg.jpg);
         section {
             display: inline-block;
+            margin: 10px;
             h3 {
                 color: #fff;
             }
@@ -182,6 +187,10 @@ footer {
                     }
                 }
             }
+        }
+        img {
+            height: 350px;
+            margin-left: 200px;
         }
     }
 }

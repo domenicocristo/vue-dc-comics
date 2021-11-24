@@ -68,6 +68,7 @@ header {
     justify-content: center;
     align-items: center;
         img {
+            height: 60px;
             margin: 10px 200px 10px 0px;
         }
         li {
