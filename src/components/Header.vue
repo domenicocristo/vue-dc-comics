@@ -14,7 +14,7 @@
 <script>
 export default {
   name: 'Header',
-  date() {
+  data() {
       return {
           links: [
               {
@@ -63,5 +63,20 @@ export default {
 </script>
 
 <style scoped lang="scss">
-
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        img {
+            margin: 10px 200px 10px 0px;
+        }
+        li {
+            display: inline-block;
+            margin: 15px;
+            a {
+                text-decoration: none;
+                color: #000;
+            }
+        }
+}
 </style>
