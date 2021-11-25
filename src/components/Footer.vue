@@ -168,19 +168,20 @@ export default {
 <style scoped lang="scss">
 footer {
     nav {
-        height: 350px;
+        height: 450px;
         display: flex;
         justify-content: center;
         background-image: url(../assets/img/footer-bg.jpg);
         section {
             display: inline-block;
-            margin: 10px;
+            margin: 50px 10px;
             h3 {
                 color: #fff;
             }
             ul {
                 list-style-type: none;
                 li {
+                    margin-top: 10px;
                     a {
                         text-decoration: none;
                         color: #8d8c8c;
@@ -189,7 +190,7 @@ footer {
             }
         }
         img {
-            height: 350px;
+            height: 100%;
             margin-left: 200px;
         }
     }
@@ -204,7 +205,7 @@ footer {
     button {
         height: 50px;
         display: inline-block;
-        margin-right: 200px;
+        margin-right: 600px;
         padding: 10px;
         background-color: #303030;
         border: none;
@@ -218,7 +219,7 @@ footer {
         color: #0082f8;
     }
     img {
-        height: 40px;
+        height: 30px;
         margin: 5px;
     }
 }

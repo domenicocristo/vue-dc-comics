@@ -78,6 +78,9 @@ header {
                 text-decoration: none;
                 color: #000;
             }
+            a:hover {
+                color: #0182f9;
+            }
         }
 }
 </style>

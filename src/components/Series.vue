@@ -1,10 +1,20 @@
 <template>
-  
+  <section id="containerSeries">
+      <SeriesCard v-for="Serie, i in Series" :key="i" :details="Serie"/> 
+      <button>
+          <h3>LOAD MORE</h3>
+      </button>
+  </section>
 </template>
 
 <script>
+import SeriesCard from './SeriesCard.vue';
+
 export default {
   name: 'Series',
+  components: {
+    SeriesCard
+  },
   data() {
       return {
           Series: [
@@ -87,5 +97,19 @@ export default {
 </script>
 
 <style scoped lang="scss">
-
+    #containerSeries {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        background-color: #1c1c1c;
+        color: #fff;
+        padding: 5%;
+    }
+        button {
+            padding: 10px 50px;
+            background-color: #0182f9;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+        }
 </style>

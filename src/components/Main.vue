@@ -1,7 +1,9 @@
 <template>
   <main>
       <section id="jumbotron">
-
+          <button>
+              <h2>CORRENT SERIES</h2>
+          </button>
       </section>
       <section id="content">
           <Series/>
@@ -18,7 +20,7 @@
 </template>
 
 <script>
-import Series from './components/Series.vue'
+import Series from './Series.vue';
 
 export default {
   name: 'Main',
@@ -64,11 +66,14 @@ main {
         height: 300px;
         background-image: url(../assets/img/jumbotron.jpg);
     }
-    #content {
-        height: 100px;
-        background-color: #000;
-        color: #fff;
-    }
+        button {
+            padding: 10px 20px;
+            background-color: #0182f9;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+            margin: 20% 100px;
+        }
     nav {
         height: 100px;
         display: flex;
