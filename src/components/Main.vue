@@ -72,7 +72,7 @@ main {
             border: none;
             color: #fff;
             cursor: pointer;
-            margin: 20% 100px;
+            margin: 280px 100px;
         }
     nav {
         height: 100px;

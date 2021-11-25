@@ -174,7 +174,7 @@ footer {
         background-image: url(../assets/img/footer-bg.jpg);
         section {
             display: inline-block;
-            margin: 50px 10px;
+            margin: 50px 20px;
             h3 {
                 color: #fff;
             }
@@ -211,6 +211,7 @@ footer {
         border: none;
         border: 2px solid #0182f9;
         color: #fff;
+        cursor: pointer;
     }
     h4 {
         display: inline-block;
@@ -221,6 +222,7 @@ footer {
     img {
         height: 30px;
         margin: 5px;
+        cursor: pointer;
     }
 }
 </style>

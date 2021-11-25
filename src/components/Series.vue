@@ -103,7 +103,7 @@ export default {
         flex-wrap: wrap;
         background-color: #1c1c1c;
         color: #fff;
-        padding: 5%;
+        padding: 5% 5% 0 5%;
     }
         button {
             padding: 10px 50px;
@@ -111,5 +111,6 @@ export default {
             border: none;
             color: #fff;
             cursor: pointer;
+            margin: 50px 0 20px 0;
         }
 </style>
