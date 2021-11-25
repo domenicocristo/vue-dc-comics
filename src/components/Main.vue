@@ -1,6 +1,11 @@
 <template>
   <main>
-      <section id="content">Contenuto!</section>
+      <section id="jumbotron">
+
+      </section>
+      <section id="content">
+          <Series/>
+      </section>
       <nav>
           <ul>
               <li v-for="link, i in links" :key="i">
@@ -13,8 +18,13 @@
 </template>
 
 <script>
+import Series from './components/Series.vue'
+
 export default {
   name: 'Main',
+  components: {
+    Series
+  },
   data() {
       return {
           links: [
@@ -50,6 +60,10 @@ export default {
 
 <style scoped lang="scss">
 main {
+    #jumbotron {
+        height: 300px;
+        background-image: url(../assets/img/jumbotron.jpg);
+    }
     #content {
         height: 100px;
         background-color: #000;
@@ -67,6 +81,7 @@ main {
             img {
                 height: 40px;
                 margin-right: 10px;
+                vertical-align: middle;
             }
             a {
                 text-decoration: none;
