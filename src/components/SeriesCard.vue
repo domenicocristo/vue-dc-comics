@@ -24,5 +24,8 @@ export default {
             height: 170px;
             width: 170px;
         }
+        img:hover {
+           border: 5px solid #0182f9;
+        }
     }
 </style>

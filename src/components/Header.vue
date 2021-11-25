@@ -4,7 +4,7 @@
       <nav>
         <ul>
             <li v-for="link, i in links" :key="i">
-                <a href="#">{{link.text}}</a>
+                <a href="#" :class="link.status">{{link.text}}</a>
             </li>
         </ul>
       </nav>
@@ -22,7 +22,8 @@ export default {
               },
 
               {
-                  text: "COMICS"
+                  text: "COMICS",
+                  status: "active"
               },
 
               {
@@ -80,6 +81,11 @@ header {
             }
             a:hover {
                 color: #0182f9;
+            }
+            .active {
+                color: #0182f9;
+                border-bottom: 5px solid #0182f9;
+                padding-bottom: 25px;
             }
         }
 }

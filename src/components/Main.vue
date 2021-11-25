@@ -65,6 +65,7 @@ main {
     #jumbotron {
         height: 300px;
         background-image: url(../assets/img/jumbotron.jpg);
+        background-size: cover;
     }
         button {
             padding: 10px 20px;
@@ -73,6 +74,10 @@ main {
             color: #fff;
             cursor: pointer;
             margin: 280px 100px;
+            border: 2px solid #0182f9;
+        }
+        button:hover {
+            background-color: #1c1c1c;
         }
     nav {
         height: 100px;
@@ -83,6 +88,7 @@ main {
         li {
             display: inline-block;
             margin: 15px;
+            cursor: pointer;
             img {
                 height: 40px;
                 margin-right: 10px;
@@ -91,6 +97,9 @@ main {
             a {
                 text-decoration: none;
                 color: #fff;
+            }
+            a:hover {
+                color: #1c1c1c;
             }
         }
     }

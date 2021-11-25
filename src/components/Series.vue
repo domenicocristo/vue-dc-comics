@@ -109,8 +109,12 @@ export default {
             padding: 10px 50px;
             background-color: #0182f9;
             border: none;
+            border: 2px solid #0182f9;
             color: #fff;
             cursor: pointer;
             margin: 50px 0 20px 0;
+        }
+        button:hover {
+            background-color: #1c1c1c;
         }
 </style>

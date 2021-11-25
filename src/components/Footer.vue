@@ -186,6 +186,9 @@ footer {
                         text-decoration: none;
                         color: #8d8c8c;
                     }
+                    a:hover {
+                        color: #0182f9;
+                    }
                 }
             }
         }
@@ -212,6 +215,9 @@ footer {
         border: 2px solid #0182f9;
         color: #fff;
         cursor: pointer;
+    }
+    button:hover {
+        background-color: #0182f9;
     }
     h4 {
         display: inline-block;
